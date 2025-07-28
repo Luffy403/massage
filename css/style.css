@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Livic', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+}
+button{
+    padding: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+button:hover{
+    background-color: #e0b0ff;
+    color: black;
+}
+button:active{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+button:focus{
+    box-shadow: 2px 1px 2px 3px rgb(122, 9, 9);
+    background-color: rgb(153, 146, 146);
+}
+@media(max-width:400px){
+    button{
+        padding: 15px;
+        font-size: 18px;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
