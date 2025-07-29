@@ -3,12 +3,12 @@
     padding: 0;
     font-family: 'Livic', sans-serif;
 }
-body{
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     height: 100vh;
 }
 button{
@@ -19,6 +19,10 @@ button{
     border-radius: 10px;
     font-size: 20px;
     transition: all 0.5s ease;
+}
+#secondBut{
+    padding: 10px;
+    font-size: 18px;
 }
 button:hover{
     background-color: #e0b0ff;
@@ -32,12 +36,57 @@ button:focus{
     box-shadow: 2px 1px 2px 3px rgb(122, 9, 9);
     background-color: rgb(153, 146, 146);
 }
-@media(max-width:400px){
+.zagolov{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+.container img{
+    width: 40px;
+    margin-top: 2px;
+}
+@media(max-width:600px){
+    main{
+        gap: 30px;
+    }
     button{
-        padding: 15px;
         font-size: 18px;
     }
     h1{
-        font-size: 25px;
+        font-size: 22px;
+    }
+    .container{
+        gap: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .container img{
+        width: 35px;
+    }
+}
+@media(max-width:400px){
+    button{
+        padding: 15px;
+        font-size: 16px;
+    }
+    #secondBut{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .container img{
+        width: 30px;
     }
 }
